@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textview_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_name"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_margin="8dp"
+        android:textSize="50sp"/>
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textview_amount"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_toLeftOf="@+id/textview_amount"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textview_amount"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_toRightOf="@+id/textview_amount"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_increase"
+        android:layout_alignStart="@+id/button_decrease"
+        android:layout_alignLeft="@+id/button_decrease"
+        android:layout_alignEnd="@+id/button_increase"
+        android:layout_alignRight="@+id/button_increase"
+        android:layout_marginTop="8dp"
+        android:text="Add" />
+
+</RelativeLayout>
