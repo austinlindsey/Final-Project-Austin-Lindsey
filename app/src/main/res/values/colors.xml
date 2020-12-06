@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <!-- Dark theme colors -->
+    <color name="colorBackgroundDark">#000</color>
+    <color name="colorAppBar">#023</color>
+    <color name="colorText">#BBB</color>
+    <color name="colorTextSecondary">#999</color>
+    <color name="colorButton">#555</color>
 </resources>

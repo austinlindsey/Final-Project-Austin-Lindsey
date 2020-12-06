@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">Quick List</string>
+    <string name="title">Grocery List</string>
+    <string name="zero">0</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="add">ADD</string>
+    <string name="empty_item">Empty Item</string>
+    <string name="enter_item">Enter Item</string>
+    <string name="pref_title_theme">Dark Theme</string>
+    <string name="pref_description_theme">Use the dark theme</string>
+    <string name="settings">Settings</string>
 </resources>

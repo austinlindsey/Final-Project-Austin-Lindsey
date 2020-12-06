@@ -2,19 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:gravity="center">
     <TextView
         android:id="@+id/textview_amount_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="@string/zero"
         android:textSize="30sp" />
     <TextView
         android:id="@+id/textview_name_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:text="Empty Item"
+        android:text="@string/empty_item"
         android:textSize="30sp"
          />
 </LinearLayout>

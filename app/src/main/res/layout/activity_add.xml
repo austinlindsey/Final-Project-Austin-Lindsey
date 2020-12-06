@@ -10,7 +10,10 @@
         android:id="@+id/edittext_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:hint="@string/enter_item"
+        android:maxLines="1"
+        android:inputType="text"/>
 
     <TextView
         android:id="@+id/textview_amount"
@@ -18,9 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext_name"
         android:layout_centerHorizontal="true"
-        android:text="0"
+        android:text="@string/zero"
         android:layout_margin="8dp"
-        android:textSize="50sp"/>
+        android:textSize="50sp"
+        android:freezesText="true"/>
 
     <Button
         android:id="@+id/button_decrease"
@@ -29,7 +33,7 @@
         android:layout_alignBottom="@+id/textview_amount"
         android:layout_alignTop="@+id/textview_amount"
         android:layout_toLeftOf="@+id/textview_amount"
-        android:text="-" />
+        android:text="@string/decrement" />
 
     <Button
         android:id="@+id/button_increase"
@@ -38,7 +42,7 @@
         android:layout_alignBottom="@+id/textview_amount"
         android:layout_alignTop="@+id/textview_amount"
         android:layout_toRightOf="@+id/textview_amount"
-        android:text="+" />
+        android:text="@string/increment" />
 
     <Button
         android:id="@+id/button_add"
@@ -50,6 +54,6 @@
         android:layout_alignEnd="@+id/button_increase"
         android:layout_alignRight="@+id/button_increase"
         android:layout_marginTop="8dp"
-        android:text="Add" />
+        android:text="@string/add" />
 
 </RelativeLayout>
